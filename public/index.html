@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasualMC | 隨意伺服器</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <a class="logo" href="#">
+            <h2 data-aos-delay="10" data-aos="fade-up" data-aos-duration="1000">CasualMC - 隨意伺服器</h2>
+        </a>
+        <nav>
+            <a data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" href="">伺服器介紹</a>
+            <a data-aos-delay="375" data-aos="fade-right" data-aos-duration="1000" href="">工作人員介紹</a>
+            <a data-aos-delay="450" data-aos="fade-right" data-aos-duration="1000" href="">贊助資訊</a>
+            <!--貼心小提醒～～　在這裡更改＊＊歷史活動紀錄＊＊-->
+            <select data-aos-delay="550" data-aos="fade-right" data-aos-duration="1000" name="formal"
+                onchange="javascript:handleSelect(this)">
+                <option value="error" selected>歷史活動紀錄</option>
+                <option value="error">【2022新春活動】</option>
+                <option value="error">活動2</option>
+                <option value="error">活動3</option>
+                <option value="error">活動4</option>
+                <option value="error">活動5</option>
+            </select>
+        </nav>
+    </div>
+    <img data-aos-delay="1800" data-aos="zoom-in" data-aos-duration="1000" src="./imgs/logo.png" alt=""
+        style="width: 50%; height: 95%; position:absolute;padding: 0; margin-top: 0%; margin-left: -5%;">
+    <div class="title">
+
+        <div class="text">
+            <h1 data-aos-delay="650" data-aos="fade-left" data-aos-duration="1000">CasualMC - 隨意伺服器</h1>
+            <p data-aos-delay="700" data-aos="fade-up" data-aos-duration="1000">
+                伺服器在不違反規章的情況下不限制玩家如何遊玩伺服器，提供一個可隨心自在遊玩的環境
+                對於紅石機關、生怪塔等皆無限制.
+                此外，更開設隨意星球與隨意礦坑提供想肝想農想挑戰的玩家遊玩</p>
+        </div>
+
+    </div>
+
+
+    <div class="news">
+        <h1>最新消息</h1>
+
+        <div class="img-news">
+            <img src="./imgs/1.png" class="news-img" alt="">
+
+
+
+            <div class="arrows">
+                <a onclick="nextIMG()" class="arrow-left"><i class='bx bx-chevron-left bx-lg'></i></a>
+
+                <a onclick="pastIMG()" class="arrow-right"><i class='bx bx-chevron-right bx-lg'></i></a>
+            </div>
+            <h1 class="news-title"></h1>
+            <h2 class="news-info"></h2>
+          
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./scripts/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
